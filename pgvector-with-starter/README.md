@@ -27,13 +27,14 @@ Then `Register` a new `Server` with these details:
 - Password: postgres
 
 Then navigate to Local -> Databases -> vector_store -> Schemas -> public -> Tables -> vectore_store
-3. From pgvector-with-starter directory, run this spring-boot app. (Make sure you have JDK21.)
+
+4. From pgvector-with-starter directory, run this spring-boot app. (Make sure you have JDK21.)
 
 `mvn spring-boot:run`
 
 When you start the app, it adds some data to the vector_store table. So if you are reusing the container, make sure to first wide the data out with `TRUNCATE TABLE public.vector_store;`. Otherwise, it will add the same data once again.
 
-4. Test using curl.
+5. Test using curl.
 
 `curl "localhost:8080/search?query=Square"`
 
