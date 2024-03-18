@@ -12,7 +12,7 @@
    
 From pgvector-with-starter directory, run
 
-`docker compose up`
+`docker compose up -d`
 
 This creates 2 containers: one for postgres (with pgvector extension) and another for pgadmin.
 To use pgadmin go to `http://localhost:5050`
