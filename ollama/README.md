@@ -8,7 +8,7 @@
 `docker exec -it ollama ollama run llama2`
 
 2. Clone this repo and go to ollama directory.
-3. Run this spring-boot app. (Make sure you have JDK21.)
+3. Run this spring-boot app. (Make sure you are using JDK21.)
 
 `mvn spring-boot:run`
 
