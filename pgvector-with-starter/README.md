@@ -20,7 +20,7 @@ Use user `pgadmin4@pgadmin.org` and password `admin`
 Then go to Server-group in Object Explorer. (OR create a new server group if there is none.)
 Then `Register` a new `Server` with these details:
 - Name: Local
-- Hostname: IP Address of the container
+- Hostname: IP Address of the container (You can get ip-address from Docker desktop. Go to the container and then to details and on the tab Inspect with Raw JSON. Or you can perhaps run some command .)
 - Port: 5432
 - Maintenance database: postgres
 - Username: postgres
