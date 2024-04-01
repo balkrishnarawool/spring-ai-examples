@@ -20,7 +20,8 @@ Use user `pgadmin4@pgadmin.org` and password `admin`
 Then go to Server-group in Object Explorer. (OR create a new server group if there is none.)
 Then `Register` a new `Server` with these details:
 - Name: Local
-- Hostname: IP Address of the container (You can get ip-address from Docker desktop. Go to the container and then to details and on the tab Inspect with Raw JSON. Or you can perhaps run some command .)
+- Hostname: IP Address of the container (You can get ip-address from Docker desktop. Go to the container and then to details and on the tab Inspect with Raw JSON. Or you can perhaps run some
+- 0command .)
 - Port: 5432
 - Maintenance database: postgres
 - Username: postgres
@@ -32,16 +33,16 @@ Then navigate to Local -> Databases -> vector_store -> Schemas -> public -> Tabl
 
 `mvn spring-boot:run`
 
-When you start the app, it adds some data to the vector_store table. So if you are reusing the container, make sure to first wide the data out with `TRUNCATE TABLE public.vector_store;`. Otherwise, it will add the same data once again.
+When you start the app, it adds some data to the vector_store table. So if you are reusing the container, make sure to first wipe the data out with `TRUNCATE TABLE public.vector_store;`. Otherwise, it will add the same data once again.
 
 5. Test using curl.
 
-`curl "localhost:8080/search?query=Square"`
+`curl "localhost:8000/search?query=Square"`
 
-`curl "localhost:8080/search?query=what%20is%20square?"`
+`curl "localhost:8000/search?query=what%20is%20square?"`
 
-`curl "localhost:8080/search?query=multiply"`
+`curl "localhost:8000/search?query=multiply"`
 
-`curl "localhost:8080/search?query=toss%20a%20coin"`
+`curl "localhost:8000/search?query=toss%20a%20coin"`
 
-`curl "localhost:8080/search?query=a%20random%20number"`
+`curl "localhost:8000/search?query=a%20random%20number"`

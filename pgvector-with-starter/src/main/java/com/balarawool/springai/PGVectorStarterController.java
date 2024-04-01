@@ -1,4 +1,4 @@
-package springai;
+package com.balarawool.springai;
 
 import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;

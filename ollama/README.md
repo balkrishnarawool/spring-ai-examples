@@ -14,6 +14,6 @@
 
 4. Test using curl.
 
-`curl "localhost:8080/chat?prompt=why%20is%20the%20sky%20blue?"`
+`curl "localhost:8000/chat?prompt=why%20is%20the%20sky%20blue?"`
 
-`curl "localhost:8080/embedding?data=hello%20world"`
+`curl "localhost:8000/embedding?data=hello%20world"`

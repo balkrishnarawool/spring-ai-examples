@@ -1,4 +1,4 @@
-package springai;
+package com.balarawool.springai;
 
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
@@ -12,14 +12,12 @@ import java.util.Map;
 
 @SpringBootApplication
 public class PGVectorStarterApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(PGVectorStarterApplication.class, args);
     }
 
     @Bean
     ApplicationRunner applicationRunner(VectorStore vectorStore) {
-
         return args -> {
             List<Document> documents = List.of(
                     new Document("When you multiply a number with itself, you get square of that number.", Map.of("field", "arithmetic")),
